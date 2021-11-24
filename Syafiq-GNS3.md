@@ -90,3 +90,65 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143220715-1c8bf7ef-20d5-4ed6-95f4-3fba07da8d65.png)
+
+### PUCCI
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.27.146
+    netmask 255.255.255.252
+    gateway 192.178.27.145
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+    address 192.178.27.1
+    netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+    address 192.178.0.1
+    netmask 255.255.248.0
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143222382-e8201ca2-8a6a-42d8-b025-b102a05430d0.png)
+
+### JIPANGU(100Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.27.2
+    netmask 255.255.255.128
+    gateway 192.178.27.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143222532-6650471f-42b4-4780-9d23-fcd5fff1bfed.png)
+
+### COURTYARD(1020Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.4.0
+    netmask 255.255.248.0
+    gateway 192.178.0.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143222696-d891e9dc-58bf-47c5-bbed-f2f39fe0eda0.png)
+
+### CALMBELT(1000Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.0.2
+    netmask 255.255.248.0
+    gateway 192.178.0.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143222903-89588af3-0c35-4b4c-9485-cd3dcdb7d09c.png)
