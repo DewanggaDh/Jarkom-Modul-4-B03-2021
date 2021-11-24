@@ -152,3 +152,88 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143222903-89588af3-0c35-4b4c-9485-cd3dcdb7d09c.png)
+
+### GUANHAO
+
+```
+auto eth0
+iface eth0 inet static
+     address 192.178.27.158
+     netmask 255.255.255.252
+     gateway 192.178.27.157
+     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+    address 192.178.16.1
+    netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+    address 192.178.27.161
+    netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+     address 192.178.24.1
+     netmask 255.255.254.0
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143223221-5e20a76b-9e03-4e9c-80e8-0bd425a10645.png)
+
+### JABRA(520Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.16.2
+    netmask 255.255.252.0
+    gateway 192.178.16.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143223399-e782d288-7e78-4f4b-9b0d-02fa3125f00d.png)
+
+### MAINGATE(500Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.24.3
+    netmask 255.255.254.0
+    gateway 192.178.24.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143223563-8bcbbd82-ad32-48a5-8d32-504f158ca235.png)
+
+### ALABASTA
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.24.2
+    netmask 255.255.254.0
+    gateway 192.178.24.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+    address 192.178.27.129
+    netmask 255.255.255.240
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143223760-f86055ca-d2c0-40ac-b5df-23f12532e744.png)
+
+### JOGRE(12Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.27.130
+    netmask 255.255.255.240
+    gateway 192.178.27.129
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143223898-fc0fd0a8-c19c-40b5-8eec-88831fada97a.png)
