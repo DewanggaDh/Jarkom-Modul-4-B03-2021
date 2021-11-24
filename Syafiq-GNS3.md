@@ -62,6 +62,8 @@ iface eth4 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143219674-2bfbcf19-8dca-4af9-8f45-5c2023ee04f0.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143229275-bf0a8215-0ba7-4d4b-9b02-90f9f66457c7.png)
+
 #### DORIKI
 
 ```
@@ -75,6 +77,7 @@ iface eth0 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143219994-235fa987-3f20-456c-bd23-aab35bcccd3e.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143229333-da6161c5-ff0d-408e-bc73-2b0c9ecd103d.png)
 
 #### WATER7
 
@@ -99,6 +102,8 @@ iface eth2 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143220228-0b5f25bb-b3a0-4180-95df-8a6024c56da4.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143229413-5644f7a0-8e18-4e9d-a904-540c8e33da9c.png)
+
 #### BLUENO(1000Host)
 
 ```
@@ -112,6 +117,8 @@ iface eth0 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143220492-063affa6-fa99-468e-8342-dbde1f67541c.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143229495-5d7cdbe4-99cc-4405-a470-92776ba99a12.png)
+
 #### CIPHER(700Host)
 
 ```
@@ -124,6 +131,8 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143220715-1c8bf7ef-20d5-4ed6-95f4-3fba07da8d65.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143229589-4189abb2-ac96-4c0a-9d1b-61486b98b87d.png)
 
 #### PUCCI
 
@@ -148,6 +157,8 @@ iface eth2 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143222382-e8201ca2-8a6a-42d8-b025-b102a05430d0.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143229825-6279f5f5-088f-4267-a30e-e3e18d20927d.png)
+
 #### JIPANGU(100Host)
 
 ```
@@ -160,6 +171,8 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143222532-6650471f-42b4-4780-9d23-fcd5fff1bfed.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143229898-5d12b5eb-b683-4fa1-b8fd-d5908e88f620.png)
 
 #### COURTYARD(1020Host)
 
@@ -174,6 +187,8 @@ iface eth0 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143222696-d891e9dc-58bf-47c5-bbed-f2f39fe0eda0.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143229962-f01f8ae0-de9d-47db-a8b1-4d61f17c368e.png)
+
 #### CALMBELT(1000Host)
 
 ```
@@ -186,6 +201,8 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143222903-89588af3-0c35-4b4c-9485-cd3dcdb7d09c.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143230027-1374aadf-a3da-4efd-99dc-74bb010cbf3a.png)
 
 #### GUANHAO
 
@@ -215,6 +232,8 @@ iface eth3 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143223221-5e20a76b-9e03-4e9c-80e8-0bd425a10645.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143230097-d31ec1a9-fe8e-406c-918c-c2f04a31b9c0.png)
+
 #### JABRA(520Host)
 
 ```
@@ -228,6 +247,8 @@ iface eth0 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143223399-e782d288-7e78-4f4b-9b0d-02fa3125f00d.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143230185-a2ff0ed4-1ea0-4a53-9a20-9dceb8aeb93f.png)
+
 #### MAINGATE(500Host)
 
 ```
@@ -240,6 +261,8 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143223563-8bcbbd82-ad32-48a5-8d32-504f158ca235.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143230275-18975504-b2a4-4210-805b-7b37ca54a347.png)
 
 #### ALABASTA
 
@@ -259,6 +282,8 @@ iface eth1 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143223760-f86055ca-d2c0-40ac-b5df-23f12532e744.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143230358-9da0c15e-cd9d-4a47-9856-260eb135e14c.png)
+
 #### JORGE(12Host)
 
 ```
@@ -271,6 +296,8 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143223898-fc0fd0a8-c19c-40b5-8eec-88831fada97a.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143230437-207556d6-7343-4017-8ed7-19bd77e71c89.png)
 
 #### OIMO
 
@@ -295,6 +322,8 @@ iface eth2 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143227163-a2e94e0d-553b-4fde-a5d8-9951b3800edb.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143230528-de07a9ce-0005-4c0b-9e5f-525c073b7912.png)
+
 #### FUKUROU
 
 ```
@@ -308,6 +337,8 @@ iface eth0 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143227311-421ebace-cb65-42ec-98f2-c1c764b0d379.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143230607-72232935-c67b-4ed6-9bd0-1169e85ef8ba.png)
+
 #### ENNIESLOBBY(250Host)
 
 ```
@@ -320,6 +351,8 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143227485-3a0653c4-5695-43f4-87b0-9d7c2a990efb.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143230674-ef77d74c-b91e-4f5a-9e7c-4055b5396113.png)
 
 #### SEASTONE
 
@@ -339,6 +372,8 @@ iface eth1 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143227680-6607da4d-6bd4-4aea-8c31-e4f9bc09c82d.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143230738-f8a51021-e0dc-4d0f-a357-e0f036ad8f79.png)
+
 #### ELENA(720Host)
 
 ```
@@ -351,3 +386,5 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143227936-c915d730-9d51-4e33-9fa8-135b7ef211a1.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143230816-a6153bb0-7b28-4022-bdfb-f06f843f64bc.png)
