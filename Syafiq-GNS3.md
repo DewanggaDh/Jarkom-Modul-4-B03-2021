@@ -225,7 +225,7 @@ iface eth1 inet static
 
 ![image](https://user-images.githubusercontent.com/16128257/143223760-f86055ca-d2c0-40ac-b5df-23f12532e744.png)
 
-### JOGRE(12Host)
+### JORGE(12Host)
 
 ```
 auto eth0
