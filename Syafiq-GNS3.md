@@ -237,3 +237,83 @@ iface eth0 inet static
 ```
 
 ![image](https://user-images.githubusercontent.com/16128257/143223898-fc0fd0a8-c19c-40b5-8eec-88831fada97a.png)
+
+### OIMO
+
+```
+auto eth0
+iface eth0 inet static
+     address 192.178.27.162
+     netmask 255.255.255.252
+     gateway 192.178.27.161
+     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+    address 192.178.26.1
+    netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+    address 192.178.27.165
+    netmask 255.255.255.252
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143227163-a2e94e0d-553b-4fde-a5d8-9951b3800edb.png)
+
+### FUKUROU
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.27.166
+    netmask 255.255.255.252
+    gateway 192.178.27.165
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143227311-421ebace-cb65-42ec-98f2-c1c764b0d379.png)
+
+### ENNIESLOBBY(250Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.26.3
+    netmask 255.255.255.0
+    gateway 192.178.26.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143227485-3a0653c4-5695-43f4-87b0-9d7c2a990efb.png)
+
+### SEASTONE
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.26.2
+    netmask 255.255.255.0
+    gateway 192.178.26.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+    address 192.178.20.1
+    netmask 255.255.252.0
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143227680-6607da4d-6bd4-4aea-8c31-e4f9bc09c82d.png)
+
+### ELENA(720Host)
+
+```
+auto eth0
+iface eth0 inet static
+    address 192.178.20.2
+    netmask 255.255.252.0
+    gateway 192.178.20.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+![image](https://user-images.githubusercontent.com/16128257/143227936-c915d730-9d51-4e33-9fa8-135b7ef211a1.png)
