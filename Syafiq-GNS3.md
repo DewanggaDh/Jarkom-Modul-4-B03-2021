@@ -1,3 +1,21 @@
+## GNS3 - CIDR
+
+### Topologi GNS3
+
+![image](https://user-images.githubusercontent.com/16128257/143228495-efb1a8f5-4280-45ce-9193-097981f0ee8c.png)
+
+### Subnetting Topologi
+
+![image](https://user-images.githubusercontent.com/16128257/143228403-1487e2b8-8dff-4251-b564-0588c0c746fa.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143565385-8462ba46-07dd-461d-8fd9-9d7734175826.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143565728-ca8f27ca-2f34-41d8-bfb2-b91e481ad6d4.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143566404-5e3a058a-9c29-4a08-a8a5-50940c096bcc.png)
+
+
+
 ## GNS3 - VLSM
 
 ### Topologi GNS3
