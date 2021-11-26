@@ -48,8 +48,9 @@ A15: 192.179.36.0/22
 
 ### Detail Konfigurasi Network Interface
 
+#### FOOSHA
+
 ```
-#========================================== Foosha
 auto eth0
 iface eth0 inet dhcp
 
@@ -76,8 +77,11 @@ auto eth4
 iface eth4 inet static
     address 192.179.128.1
     netmask 255.255.255.252
+```
 
-#========================================== BlueNo
+#### BLUENO
+
+```
 # A2
 auto eth0
 iface eth0 inet static
@@ -85,8 +89,11 @@ iface eth0 inet static
     netmask 255.255.252.0
     gateway 192.178.128.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Doriki
+#### DORIKI
+
+```
 # A6
 auto eth0
 iface eth0 inet static
@@ -94,8 +101,11 @@ iface eth0 inet static
     netmask 255.255.255.252
     gateway 192.179.128.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Water7
+#### WATER7
+
+```
 # A5
 auto eth0
 iface eth0 inet static
@@ -115,8 +125,11 @@ auto eth2
 iface eth2 inet static
     address 192.178.32.1
     netmask 255.255.255.0
+```
 
-#========================================== Cipher
+#### CIPHER
+
+```
 # A1
 auto eth0
 iface eth0 inet static
@@ -124,8 +137,11 @@ iface eth0 inet static
     netmask 255.255.252.0
     gateway 192.178.32.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Pucci
+#### PUCCI
+
+```
 # A4
 auto eth0
 iface eth0 inet static
@@ -145,8 +161,11 @@ auto eth2
 iface eth2 inet static
     address 192.178.8.1
     netmask 255.255.248.0
+```
 
-#========================================== Jipangu
+#### JIPANGU
+
+```
 # A3
 auto eth0
 iface eth0 inet static
@@ -154,8 +173,11 @@ iface eth0 inet static
     netmask 255.255.255.128
     gateway 192.178.0.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Cambelt
+#### CAMBELT
+
+```
 # A7
 auto eth0
 iface eth0 inet static
@@ -163,8 +185,11 @@ iface eth0 inet static
     netmask 255.255.248.0
     gateway 192.178.8.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Courtyard
+#### COURTYARD
+
+```
 # A7
 auto eth0
 iface eth0 inet static
@@ -172,8 +197,11 @@ iface eth0 inet static
     netmask 255.255.248.0
     gateway 192.178.8.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Guanhao
+#### GUANHAO
+
+```
 # A9
 auto eth0
 iface eth0 inet static
@@ -200,7 +228,11 @@ iface eth3 inet static
      address 192.179.0.1
      netmask 255.255.254.0
 
-#========================================== Jabra
+```
+
+#### JABRA
+
+```
 # A8
 auto eth0
 iface eth0 inet static
@@ -208,8 +240,11 @@ iface eth0 inet static
     netmask 255.255.252.0
     gateway 192.179.4.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Alabasta
+#### ALABASTA
+
+```
 # A11
 auto eth0
 iface eth0 inet static
@@ -224,7 +259,11 @@ iface eth1 inet static
     address 192.179.2.1
     netmask 255.255.255.240
 
-#========================================== MainGate
+```
+
+#### MAINGATE
+
+```
 # A11
 auto eth0
 iface eth0 inet static
@@ -233,7 +272,11 @@ iface eth0 inet static
     gateway 192.179.0.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
 
-#========================================== Jorge
+```
+
+#### JORGE
+
+```
 # A12
 auto eth0
 iface eth0 inet static
@@ -241,8 +284,11 @@ iface eth0 inet static
     netmask 255.255.255.240
     gateway 192.179.2.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Oimo
+#### OIMO
+
+```
 # A10
 auto eth0
 iface eth0 inet static
@@ -262,8 +308,11 @@ auto eth2
 iface eth2 inet static
     address 192.179.40.1
     netmask 255.255.255.252
+```
 
-#========================================== Fukurou
+#### FUKUROU
+
+```
 # A14
 auto eth0
 iface eth0 inet static
@@ -271,8 +320,11 @@ iface eth0 inet static
     netmask 255.255.255.252
     gateway 192.179.40.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== EnniesLobby
+#### ENNIESLOBBY
+
+```
 # A13
 auto eth0
 iface eth0 inet static
@@ -280,8 +332,11 @@ iface eth0 inet static
     netmask 255.255.255.0
     gateway 192.179.32.1
     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
 
-#========================================== Seastone
+#### SEASTONE
+
+```
 # A13
 auto eth0
 iface eth0 inet static
@@ -295,8 +350,11 @@ auto eth1
 iface eth1 inet static
     address 192.179.36.1
     netmask 255.255.252.0
+```
 
-#========================================== Elena
+#### ELENA
+
+```
 # A15
 auto eth0
 iface eth0 inet static
@@ -308,8 +366,9 @@ iface eth0 inet static
 
 ### Detail Konfigurasi Routing
 
+#### FOOSHA
+
 ```
-#========================================== Foosha
 route add -net 192.178.32.0 netmask 255.255.252.0 gw 192.178.64.2 #A5 - A1
 route add -net 192.178.16.0 netmask 255.255.255.252 gw 192.178.64.2 #A5 - A4
 route add -net 192.178.0.0 netmask 255.255.255.128 gw 192.178.64.2 #A5 - A3
@@ -321,30 +380,48 @@ route add -net 192.179.2.0 netmask 255.255.255.240 gw 192.179.64.2 #A9 - A12
 route add -net 192.179.32.0 netmask 255.255.255.0 gw 192.179.64.2 #A9 - A13
 route add -net 192.179.40.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A14
 route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.64.2 #A9 - A15
+```
 
-#========================================== Water7
+#### WATER7
+
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.178.64.1 #A5 - Self
 route add -net 192.178.0.0 netmask 255.255.255.128 gw 192.178.16.2 #A4 - A3
 route add -net 192.178.8.0 netmask 255.255.248.0 gw 192.178.16.2 #A4 - A7
+```
 
-#========================================== Pucci
+#### PUCCI
+
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.178.16.1 #A4 - Self
+```
 
-#========================================== Guanhao
+#### GUANHAO
+
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.64.1 #A9 - Self
 route add -net 192.179.2.0 netmask 255.255.255.240 gw 192.179.0.2 #A11 - A12
 route add -net 192.179.32.0 netmask 255.255.255.0 gw 192.179.48.2 #A10 - A13
 route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.48.2 #A10 - A15
 route add -net 192.179.40.0 netmask 255.255.255.252 gw 192.179.48.2 #A10 - A14
+```
 
-#========================================== Alabasta
+#### ALABASTA
+
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.0.1 #A11 - Self
+```
 
-#========================================== Oimo
+#### OIMO
+
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.48.1 #A10 - Self
 route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.32.2 #A13 - A15
+```
 
-#========================================== Seastone
+#### SEASTONE
+
+```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.32.1 #A13 - Self
 ```
 
