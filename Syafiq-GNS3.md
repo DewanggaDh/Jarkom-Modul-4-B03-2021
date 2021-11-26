@@ -24,7 +24,7 @@
 
 ### Penghitungan CIDR dari Subnetting
 
-
+![image](https://user-images.githubusercontent.com/16128257/143578197-49c9057a-cce1-4dd4-89b1-190d99f607fa.png)
 
 ## GNS3 - VLSM
 
