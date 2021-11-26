@@ -310,14 +310,16 @@ iface eth0 inet static
 
 ```
 #========================================== Foosha
+route add -net 192.178.32.0 netmask 255.255.252.0 gw 192.178.64.2 #A5 - A1
 route add -net 192.178.16.0 netmask 255.255.255.252 gw 192.178.64.2 #A5 - A4
 route add -net 192.178.0.0 netmask 255.255.255.128 gw 192.178.64.2 #A5 - A3
 route add -net 192.178.8.0 netmask 255.255.248.0 gw 192.178.64.2 #A5 - A7
+route add -net 192.179.4.0 netmask 255.255.252.0 gw 192.179.64.2 #A9 - A8
+route add -net 192.179.48.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A10
 route add -net 192.179.0.0 netmask 255.255.254.0 gw 192.179.64.2 #A9 - A11
 route add -net 192.179.2.0 netmask 255.255.255.240 gw 192.179.64.2 #A9 - A12
-route add -net 192.179.48.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A10
 route add -net 192.179.32.0 netmask 255.255.255.0 gw 192.179.64.2 #A9 - A13
-route add -net 192.179.48.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A10
+route add -net 192.179.40.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A14
 route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.64.2 #A9 - A15
 
 #========================================== Water7
