@@ -22,7 +22,9 @@
 
 ![image](https://user-images.githubusercontent.com/16128257/143568504-ef67bd9d-6e87-43ee-ae42-c0202550b32b.png)
 
-### Penghitungan VLSM dari Subnetting
+### Penghitungan CIDR dari Subnetting
+
+
 
 ## GNS3 - VLSM
 
