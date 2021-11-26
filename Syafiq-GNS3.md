@@ -12,9 +12,17 @@
 
 ![image](https://user-images.githubusercontent.com/16128257/143565728-ca8f27ca-2f34-41d8-bfb2-b91e481ad6d4.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143567785-20b000a6-d7ca-4c94-8562-bc0e75165cac.png)
+
 ![image](https://user-images.githubusercontent.com/16128257/143566404-5e3a058a-9c29-4a08-a8a5-50940c096bcc.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143568178-7bdf12e8-57ba-466e-8c34-a5bdf47e232f.png)
 
+![image](https://user-images.githubusercontent.com/16128257/143568349-a4f22e65-ce88-4d61-883b-2084a26884f9.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143568504-ef67bd9d-6e87-43ee-ae42-c0202550b32b.png)
+
+### Penghitungan VLSM dari Subnetting
 
 ## GNS3 - VLSM
 
