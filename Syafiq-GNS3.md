@@ -24,7 +24,27 @@
 
 ### Penghitungan CIDR dari Subnetting
 
-![image](https://user-images.githubusercontent.com/16128257/143578197-49c9057a-cce1-4dd4-89b1-190d99f607fa.png)
+![image](https://user-images.githubusercontent.com/16128257/143578675-3a75b643-6760-46cd-a262-977a6054bd29.png)
+
+### Hasil NID dan Netmask dari Penghitungan CIDR
+
+```
+A1: 192.178.32.0/22
+A2: 192.178.128.0/22
+A3: 192.178.0.0/25
+A4: 192.178.16.0/30
+A5: 192.178.64.0/30
+A6: 192.179.128.0/30
+A7: 192.178.8.0/21
+A8: 192.179.0.0/22
+A9: 192.179.64.0/30
+A10: 192.179.48.0/30
+A11: 192.179.0.0/23
+A12: 192.179.2.0/28
+A13: 192.179.32.0/24
+A14: 192.179.40.0/30
+A15: 192.179.36.0/22
+```
 
 ## GNS3 - VLSM
 
