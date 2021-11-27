@@ -29,21 +29,21 @@
 ### Hasil NID dan Netmask dari Penghitungan CIDR
 
 ```
-A1: 192.178.32.0/22
-A2: 192.178.128.0/22
-A3: 192.178.0.0/25
-A4: 192.178.16.0/30
-A5: 192.178.64.0/30
-A6: 192.179.128.0/30
-A7: 192.178.8.0/21
-A8: 192.179.4.0/22
-A9: 192.179.64.0/30
-A10: 192.179.48.0/30
-A11: 192.179.0.0/23
-A12: 192.179.2.0/28
-A13: 192.179.32.0/24
-A14: 192.179.40.0/30
-A15: 192.179.36.0/22
+A1: 192.178.32.0/22     # Water7, Cipher
+A2: 192.178.128.0/22    # Foosha, BlueNo
+A3: 192.178.0.0/25      # Pucci, Jipangu
+A4: 192.178.16.0/30     # Water7, Pucci
+A5: 192.178.64.0/30     # Foosha, Water7
+A6: 192.179.128.0/30    # Foosha, Doriki
+A7: 192.178.8.0/21      # Pucci, Calmbelt, Courtyard
+A8: 192.179.4.0/22      # Guanhao, Jabra
+A9: 192.179.64.0/30     # Foosha, Guanhao
+A10: 192.179.48.0/30    # Guanhao, Oimo
+A11: 192.179.0.0/23     # Guanhao, Alabasta, MainGate
+A12: 192.179.2.0/28     # Alabasta, Jorge
+A13: 192.179.32.0/24    # Oimo, Seastone, EnniesLobby
+A14: 192.179.40.0/30    # Oimo, Fukurou
+A15: 192.179.36.0/22    # Seastone, Elena
 ```
 
 ### Detail Konfigurasi Network Interface
