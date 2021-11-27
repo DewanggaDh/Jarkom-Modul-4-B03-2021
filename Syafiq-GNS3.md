@@ -48,6 +48,8 @@ A15: 192.179.36.0/22
 
 ### Detail Konfigurasi Network Interface
 
+Pada GNS3, klik kanan pada masing - masing node edit configuration network interface menjadi config masing - masing node berikut.
+
 #### FOOSHA
 
 ```
@@ -365,6 +367,16 @@ iface eth0 inet static
 ```
 
 ### Detail Konfigurasi Routing
+
+Untuk setiap router (FOOSHA, PUCCI, dll), tambahkan command berikut pada `.bashrc`.
+
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.178.0.0/15
+```
+
+Untuk masing - masing router juga, tambahkan command - command dibawah berikut juga pada `.bashrc`.
+
+Setelah command telah ditambahkan, kemudian save lalu run `source .bashrc` untuk melakukan run file `.bashrc`.
 
 #### FOOSHA
 
