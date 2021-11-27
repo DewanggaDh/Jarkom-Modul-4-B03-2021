@@ -271,3 +271,441 @@ Routing Network Address :
 
 ![image](https://user-images.githubusercontent.com/73766205/143477638-c6cac21a-33a5-4f98-9464-baded50eecd8.png)
 
+## GNS3 - CIDR
+
+### Topologi GNS3
+
+![image](https://user-images.githubusercontent.com/16128257/143228495-efb1a8f5-4280-45ce-9193-097981f0ee8c.png)
+
+### Subnetting Topologi
+
+![image](https://user-images.githubusercontent.com/16128257/143228403-1487e2b8-8dff-4251-b564-0588c0c746fa.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143565385-8462ba46-07dd-461d-8fd9-9d7734175826.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143575404-4174c080-b73e-4385-a14b-1c662fc2d4b2.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143567785-20b000a6-d7ca-4c94-8562-bc0e75165cac.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143566404-5e3a058a-9c29-4a08-a8a5-50940c096bcc.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143568178-7bdf12e8-57ba-466e-8c34-a5bdf47e232f.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143568349-a4f22e65-ce88-4d61-883b-2084a26884f9.png)
+
+![image](https://user-images.githubusercontent.com/16128257/143568504-ef67bd9d-6e87-43ee-ae42-c0202550b32b.png)
+
+### Penghitungan CIDR dari Subnetting
+
+![image](https://user-images.githubusercontent.com/16128257/143590216-512cf1d3-fba1-4eb6-8841-7d7bb95ac176.png)
+
+### Hasil NID dan Netmask dari Penghitungan CIDR
+
+```
+A1: 192.178.32.0/22     # Water7, Cipher
+A2: 192.178.128.0/22    # Foosha, BlueNo
+A3: 192.178.0.0/25      # Pucci, Jipangu
+A4: 192.178.16.0/30     # Water7, Pucci
+A5: 192.178.64.0/30     # Foosha, Water7
+A6: 192.179.128.0/30    # Foosha, Doriki
+A7: 192.178.8.0/21      # Pucci, Calmbelt, Courtyard
+A8: 192.179.4.0/22      # Guanhao, Jabra
+A9: 192.179.64.0/30     # Foosha, Guanhao
+A10: 192.179.48.0/30    # Guanhao, Oimo
+A11: 192.179.0.0/23     # Guanhao, Alabasta, MainGate
+A12: 192.179.2.0/28     # Alabasta, Jorge
+A13: 192.179.32.0/24    # Oimo, Seastone, EnniesLobby
+A14: 192.179.40.0/30    # Oimo, Fukurou
+A15: 192.179.36.0/22    # Seastone, Elena
+```
+
+### Detail Konfigurasi Network Interface
+
+Pada GNS3, klik kanan pada masing - masing node edit configuration network interface menjadi config masing - masing node berikut.
+
+#### FOOSHA
+
+```
+auto eth0
+iface eth0 inet dhcp
+
+# A2
+auto eth1
+iface eth1 inet static
+    address 192.178.128.1
+    netmask 255.255.252.0
+
+# A5
+auto eth2
+iface eth2 inet static
+    address 192.178.64.1
+    netmask 255.255.255.252
+
+# A9
+auto eth3
+iface eth3 inet static
+    address 192.179.64.1
+    netmask 255.255.255.252
+
+# A6
+auto eth4
+iface eth4 inet static
+    address 192.179.128.1
+    netmask 255.255.255.252
+```
+
+#### BLUENO
+
+```
+# A2
+auto eth0
+iface eth0 inet static
+    address 192.178.128.2
+    netmask 255.255.252.0
+    gateway 192.178.128.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### DORIKI
+
+```
+# A6
+auto eth0
+iface eth0 inet static
+    address 192.179.128.2
+    netmask 255.255.255.252
+    gateway 192.179.128.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### WATER7
+
+```
+# A5
+auto eth0
+iface eth0 inet static
+    address 192.178.64.2
+    netmask 255.255.255.252
+    gateway 192.178.64.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+# A4
+auto eth1
+iface eth1 inet static
+    address 192.178.16.1
+    netmask 255.255.255.252
+
+# A1
+auto eth2
+iface eth2 inet static
+    address 192.178.32.1
+    netmask 255.255.255.0
+```
+
+#### CIPHER
+
+```
+# A1
+auto eth0
+iface eth0 inet static
+    address 192.178.32.2
+    netmask 255.255.252.0
+    gateway 192.178.32.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### PUCCI
+
+```
+# A4
+auto eth0
+iface eth0 inet static
+    address 192.178.16.2
+    netmask 255.255.255.252
+    gateway 192.178.16.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+# A3
+auto eth1
+iface eth1 inet static
+    address 192.178.0.1
+    netmask 255.255.255.128
+
+# A7
+auto eth2
+iface eth2 inet static
+    address 192.178.8.1
+    netmask 255.255.248.0
+```
+
+#### JIPANGU
+
+```
+# A3
+auto eth0
+iface eth0 inet static
+    address 192.178.0.2
+    netmask 255.255.255.128
+    gateway 192.178.0.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### CAMBELT
+
+```
+# A7
+auto eth0
+iface eth0 inet static
+    address 192.178.8.2
+    netmask 255.255.248.0
+    gateway 192.178.8.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### COURTYARD
+
+```
+# A7
+auto eth0
+iface eth0 inet static
+    address 192.178.8.3
+    netmask 255.255.248.0
+    gateway 192.178.8.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### GUANHAO
+
+```
+# A9
+auto eth0
+iface eth0 inet static
+     address 192.179.64.2
+     netmask 255.255.255.252
+     gateway 192.179.64.1
+     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+# A8
+auto eth1
+iface eth1 inet static
+    address 192.179.4.1
+    netmask 255.255.252.0
+
+# A10
+auto eth2
+iface eth2 inet static
+    address 192.179.48.1
+    netmask 255.255.255.252
+
+# A11
+auto eth3
+iface eth3 inet static
+     address 192.179.0.1
+     netmask 255.255.254.0
+
+```
+
+#### JABRA
+
+```
+# A8
+auto eth0
+iface eth0 inet static
+    address 192.179.4.2
+    netmask 255.255.252.0
+    gateway 192.179.4.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### ALABASTA
+
+```
+# A11
+auto eth0
+iface eth0 inet static
+    address 192.179.0.2
+    netmask 255.255.254.0
+    gateway 192.179.0.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+# A12
+auto eth1
+iface eth1 inet static
+    address 192.179.2.1
+    netmask 255.255.255.240
+
+```
+
+#### MAINGATE
+
+```
+# A11
+auto eth0
+iface eth0 inet static
+    address 192.179.0.3
+    netmask 255.255.254.0
+    gateway 192.179.0.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+```
+
+#### JORGE
+
+```
+# A12
+auto eth0
+iface eth0 inet static
+    address 192.179.2.2
+    netmask 255.255.255.240
+    gateway 192.179.2.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### OIMO
+
+```
+# A10
+auto eth0
+iface eth0 inet static
+     address 192.179.48.2
+     netmask 255.255.255.252
+     gateway 192.179.48.1
+     up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+# A13
+auto eth1
+iface eth1 inet static
+    address 192.179.32.1
+    netmask 255.255.255.0
+
+# A14
+auto eth2
+iface eth2 inet static
+    address 192.179.40.1
+    netmask 255.255.255.252
+```
+
+#### FUKUROU
+
+```
+# A14
+auto eth0
+iface eth0 inet static
+    address 192.179.40.2
+    netmask 255.255.255.252
+    gateway 192.179.40.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### ENNIESLOBBY
+
+```
+# A13
+auto eth0
+iface eth0 inet static
+    address 192.179.32.3
+    netmask 255.255.255.0
+    gateway 192.179.32.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+#### SEASTONE
+
+```
+# A13
+auto eth0
+iface eth0 inet static
+    address 192.179.32.2
+    netmask 255.255.255.0
+    gateway 192.179.32.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+
+# A15
+auto eth1
+iface eth1 inet static
+    address 192.179.36.1
+    netmask 255.255.252.0
+```
+
+#### ELENA
+
+```
+# A15
+auto eth0
+iface eth0 inet static
+    address 192.179.36.2
+    netmask 255.255.252.0
+    gateway 192.179.36.1
+    up echo nameserver 192.178.122.1 > /etc/resolv.conf
+```
+
+### Detail Konfigurasi Routing
+
+Untuk setiap router (FOOSHA, PUCCI, dll), tambahkan command berikut pada `.bashrc`.
+
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.178.0.0/15
+```
+
+Untuk masing - masing router juga, tambahkan command - command dibawah berikut juga pada `.bashrc`.
+
+Setelah command telah ditambahkan, kemudian save lalu run `source .bashrc` untuk melakukan run file `.bashrc`.
+
+#### FOOSHA
+
+```
+route add -net 192.178.32.0 netmask 255.255.252.0 gw 192.178.64.2 #A5 - A1
+route add -net 192.178.16.0 netmask 255.255.255.252 gw 192.178.64.2 #A5 - A4
+route add -net 192.178.0.0 netmask 255.255.255.128 gw 192.178.64.2 #A5 - A3
+route add -net 192.178.8.0 netmask 255.255.248.0 gw 192.178.64.2 #A5 - A7
+route add -net 192.179.4.0 netmask 255.255.252.0 gw 192.179.64.2 #A9 - A8
+route add -net 192.179.48.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A10
+route add -net 192.179.0.0 netmask 255.255.254.0 gw 192.179.64.2 #A9 - A11
+route add -net 192.179.2.0 netmask 255.255.255.240 gw 192.179.64.2 #A9 - A12
+route add -net 192.179.32.0 netmask 255.255.255.0 gw 192.179.64.2 #A9 - A13
+route add -net 192.179.40.0 netmask 255.255.255.252 gw 192.179.64.2 #A9 - A14
+route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.64.2 #A9 - A15
+```
+
+#### WATER7
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.178.64.1 #A5 - Self
+route add -net 192.178.0.0 netmask 255.255.255.128 gw 192.178.16.2 #A4 - A3
+route add -net 192.178.8.0 netmask 255.255.248.0 gw 192.178.16.2 #A4 - A7
+```
+
+#### PUCCI
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.178.16.1 #A4 - Self
+```
+
+#### GUANHAO
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.64.1 #A9 - Self
+route add -net 192.179.2.0 netmask 255.255.255.240 gw 192.179.0.2 #A11 - A12
+route add -net 192.179.32.0 netmask 255.255.255.0 gw 192.179.48.2 #A10 - A13
+route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.48.2 #A10 - A15
+route add -net 192.179.40.0 netmask 255.255.255.252 gw 192.179.48.2 #A10 - A14
+```
+
+#### ALABASTA
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.0.1 #A11 - Self
+```
+
+#### OIMO
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.48.1 #A10 - Self
+route add -net 192.179.36.0 netmask 255.255.252.0 gw 192.179.32.2 #A13 - A15
+```
+
+#### SEASTONE
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.179.32.1 #A13 - Self
+```
