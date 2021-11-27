@@ -1,5 +1,9 @@
 # Jarkom-Modul-4-B03-2021
 
+Nama Anggota :
+1. Dewangga Dharmawan (05111940000029)
+2. Ahmad Syafiq Aqil Wafi (05111940000089)
+
 # Cisco Packet Tracer - VLSM
 
 ## Topologi CPT
